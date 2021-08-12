@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mysql-django-tute:
+    image: "mysql:5.7"
+    ports:
+      - "3313:3306"
+    environment:
+      MYSQL_DATABASE: "django-db"
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'pass'
+      MYSQL_ROOT_PASSWORD: "123"
+      MYSQL_ROOT_HOST: 192.168.0.48/255.255.255.248
